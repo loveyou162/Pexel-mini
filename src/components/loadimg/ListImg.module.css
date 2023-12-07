@@ -1,0 +1,72 @@
+/* ListImg.module.css */
+
+.boxSearch {
+  margin-bottom: 20px;
+  background-color: #292929;
+  width: 50%;
+  margin: 24px auto;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.boxSearch label {
+  margin-right: 10px;
+  color: #fff;
+}
+.boxSearch input {
+  margin-right: 10px;
+  color: #0c0c0c;
+  border: none;
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.boxSearch input:focus {
+  outline: none;
+  background-color: rgb(188, 255, 233);
+}
+
+.boxSearch input::placeholder {
+  font-size: 16px;
+}
+
+.boxSearch button {
+  padding: 16px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.BoxImg {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  list-style: none;
+}
+
+.ImgItem {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.ImgItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+  /* transition: 0.4s; */
+  border-radius: 8px;
+}
+
+.ImgItem:hover img {
+  transform: scale(1.05);
+  /* width: 60px; */
+}
